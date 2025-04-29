@@ -1,33 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Salary Calculator</title>
-  <link rel="stylesheet" href="salary-style.css">
+  <link rel="stylesheet" href="salary-calculator.css">
 </head>
 <body>
-
   <div class="background-image"></div>
 
-  <div class="content">
-    <h1>Salary Calculator</h1>
+  <h1>Salary Calculator</h1>
 
-    <div class="form-container">
-      <form id="salaryForm">
-        <label for="package">Company Package per anum (in ₹):</label>
-        <input type="number" id="package" name="package" required>
+  <label for="package">Company Package (per annum, in INR):</label>
+  <input type="number" id="package" placeholder="Enter annual package in INR" required />
 
-        <label for="joiningDate">Date of Joining:</label>
-        <input type="date" id="joiningDate" name="joiningDate" required>
+  <button id="calculateBtn">Calculate Monthly Salary</button>
 
-        <button type="submit">Calculate Salary per month</button>
-      </form>
+  <div id="salaryResult" class="result"></div>
 
-      <div id="result"></div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="salary-calculator.js"></script>
 </body>
 </html>
