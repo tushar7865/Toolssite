@@ -1,0 +1,75 @@
+/* Background Image */
+.background-image {
+    background: url('./images/calculator.jpg') no-repeat center center/cover;
+    filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* rest of your styles */
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* slightly transparent background over blur */
+  }
+  
+  h1 {
+    color: #d88c75;
+    margin-top: 30px;
+  }
+  
+  /* (tool-container, tool-card, btn, etc. same as before) */
+  .tool-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  .tool-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 250px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .calculator {
+    margin-top: 50px;
+  }
+  
+  input {
+    padding: 8px;
+    width: 250px;
+    margin-top: 10px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .result {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #555;
+  }  
